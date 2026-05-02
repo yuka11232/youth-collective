@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Youth Collective is a youth-led initiative in Azerbaijan focused on ecology, sport, health, outdoor activity, and community well-being." />
+<link rel="icon" href="assets/logos/youth-collective-logo.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <title>Activity Gallery | Youth Collective</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" data-header>
+  <a class="brand" href="index.html" aria-label="Youth Collective home">
+    <img class="brand-logo" src="assets/logos/youth-collective-logo.png" alt="" aria-hidden="true" />
+    <span class="brand-text">Youth Collective</span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" data-site-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="events.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="team.html">Team</a>
+    <a href="future.html">Vision</a>
+    <a class="nav-cta" href="contact.html">Join</a>
+  </nav>
+</header>
+
+  <main id="main">
+    <section class="page-hero section-shell gallery-intro reveal">
+      <p class="eyebrow">Activity gallery</p>
+      <h1>Photos that prove the movement is real.</h1>
+      <p>This page is designed for uploaded photos from Youth Collective activities: runs, eco-actions, outdoor gatherings, team planning, and community moments across Baku.</p>
+      <div class="gallery-actions">
+        <a class="button primary" href="#upload-photos">Upload local photos</a>
+        <a class="button secondary" href="events.html">View activity formats</a>
+      </div>
+    </section>
+
+    <section class="section-shell gallery-stats reveal" aria-label="Gallery summary">
+      <article class="gallery-stat"><strong>6</strong><span>starter moments</span></article>
+      <article class="gallery-stat"><strong>4</strong><span>activity categories</span></article>
+      <article class="gallery-stat"><strong>∞</strong><span>space for future proof</span></article>
+    </section>
+
+    <section class="section-shell reveal" aria-labelledby="gallery-title">
+      <div class="gallery-toolbar">
+        <div>
+          <p class="eyebrow">Documenting action</p>
+          <h2 id="gallery-title">Featured activity moments</h2>
+        </div>
+        <div class="gallery-filters" role="group" aria-label="Filter gallery photos">
+          <button class="gallery-filter active" data-gallery-filter="all">All</button>
+          <button class="gallery-filter" data-gallery-filter="eco">Eco</button>
+          <button class="gallery-filter" data-gallery-filter="sport">Sport</button>
+          <button class="gallery-filter" data-gallery-filter="health">Health</button>
+          <button class="gallery-filter" data-gallery-filter="community">Community</button>
+        </div>
+      </div>
+
+      <div class="photo-grid">
+        <article class="photo-card" data-gallery-card data-category="eco"><img src="assets/images/gallery/cleanup-day.svg" alt="Youth Collective cleanup activity placeholder"><div class="photo-content"><span>Eco</span><h3>Cleanup Day</h3><p class="photo-meta">Baku seaside · Summer pilot</p><p>Use this card for photos from cleanup walks, sorting stations, and public-space care.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="sport"><img src="assets/images/gallery/run-day.svg" alt="Youth Collective running activity placeholder"><div class="photo-content"><span>Sport</span><h3>Seaside Youth Run</h3><p class="photo-meta">Boulevard route · Monthly format</p><p>Replace this with movement photos, route moments, warmups, and finish-line group shots.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="health"><img src="assets/images/gallery/outdoor-circle.svg" alt="Youth Collective outdoor health gathering placeholder"><div class="photo-content"><span>Health</span><h3>Outdoor Habit Circle</h3><p class="photo-meta">Public park · Weekend activity</p><p>Show walking, stretching, sunlight, breathing, and practical habit-building activities.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="community"><img src="assets/images/gallery/volunteer-moment.svg" alt="Youth Collective volunteer moment placeholder"><div class="photo-content"><span>Community</span><h3>Volunteer Moment</h3><p class="photo-meta">Team action · Event support</p><p>A space for photos of participants helping, organizing, guiding, and showing up.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="eco"><img src="assets/images/gallery/seaside-action.svg" alt="Youth Collective seaside ecology action placeholder"><div class="photo-content"><span>Eco</span><h3>Seaside Action</h3><p class="photo-meta">Coastal area · Public space care</p><p>Use for before-and-after photos, route documentation, and visible environmental impact.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="community"><img src="assets/images/gallery/team-planning.svg" alt="Youth Collective team planning placeholder"><div class="photo-content"><span>Community</span><h3>Team Planning</h3><p class="photo-meta">Youth-led organization · Behind the scenes</p><p>Document planning sessions, role division, reflection meetings, and future project work.</p></div></article>
+      </div>
+    </section>
+
+    <section id="upload-photos" class="section-shell upload-panel reveal">
+      <div class="upload-grid">
+        <div class="upload-notes">
+          <p class="eyebrow">Local upload preview</p>
+          <h2>Add activity photos before publishing.</h2>
+          <p>This uploader previews photos inside your browser only. A static HTML website cannot permanently save uploads without a backend. For the real public website, place final photos inside <strong>assets/images/gallery/</strong> and replace the placeholder image paths in <strong>gallery.html</strong>.</p>
+          <div class="gallery-note"><strong>Best practice:</strong> rename photos clearly, for example <em>cleanup-boulevard-01.jpg</em>, <em>seaside-run-02.jpg</em>, or <em>team-planning-01.jpg</em>.</div>
+        </div>
+        <div>
+          <div class="upload-box">
+            <label for="photo-upload"><span class="upload-icon">+</span><strong>Choose activity photos</strong><p>Upload JPG, PNG, or WebP files to preview the gallery layout.</p><input id="photo-upload" type="file" accept="image/*" multiple data-photo-upload /></label>
+          </div>
+          <h3 class="preview-heading" data-preview-heading hidden>Local preview</h3>
+          <div class="preview-grid" data-preview-grid aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-panel section-shell reveal">
+      <div><p class="eyebrow">Evidence matters</p><h2>A strong initiative needs visible proof: people, places, actions, and progress over time.</h2><p>Use this gallery to document real work and make Youth Collective feel active, credible, and growing.</p></div>
+      <a class="button light" href="contact.html">Join the Team</a>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="footer-brand" href="index.html">Youth Collective</a>
+      <p>A youth-led initiative in Azerbaijan connecting ecology, sport, health, and public life through meaningful outdoor action.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <a href="events.html">Activities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="team.html">Team</a>
+      <a href="future.html">Vision</a>
+      <a href="contact.html">Join</a>
+    </div>
+    <div>
+      <h3>Focus</h3>
+      <p>Ecology · Sport · Health · Youth Engagement · Community Well-being</p>
+    </div>
+    <div>
+      <h3>Built in Baku</h3>
+      <p>Locally rooted, youth-led, and designed to grow through real participation and measurable community value.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Youth Collective</span>
+    <span>Made for movement, sunlight, and community action.</span>
+  </div>
+</footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

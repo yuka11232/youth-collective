@@ -26,6 +26,7 @@
   <nav class="site-nav" data-site-nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="events.html">Activities</a>
+    <a href="activities-2025.html">2025</a>
     <a href="gallery.html">Gallery</a>
     <a href="team.html">Team</a>
     <a href="future.html">Vision</a>
@@ -36,18 +37,18 @@
   <main id="main">
     <section class="page-hero section-shell gallery-intro reveal">
       <p class="eyebrow">Activity gallery</p>
-      <h1>Photos that prove the movement is real.</h1>
-      <p>This page is designed for uploaded photos from Youth Collective activities: runs, eco-actions, outdoor gatherings, team planning, and community moments across Baku.</p>
+      <h1>Photos organized by activity and year.</h1>
+      <p>This gallery is built for real evidence: 2025 archive photos, current activity photos, team planning moments, and public-space documentation across Baku.</p>
       <div class="gallery-actions">
-        <a class="button primary" href="#upload-photos">Upload local photos</a>
-        <a class="button secondary" href="events.html">View activity formats</a>
+        <a class="button primary" href="activities-2025.html">Open 2025 archive</a>
+        <a class="button secondary" href="#upload-photos">Preview local photos</a>
       </div>
     </section>
 
     <section class="section-shell gallery-stats reveal" aria-label="Gallery summary">
-      <article class="gallery-stat"><strong>6</strong><span>starter moments</span></article>
-      <article class="gallery-stat"><strong>4</strong><span>activity categories</span></article>
-      <article class="gallery-stat"><strong>∞</strong><span>space for future proof</span></article>
+      <article class="gallery-stat"><strong>2025</strong><span>archive year</span></article>
+      <article class="gallery-stat"><strong>2026</strong><span>current / future year</span></article>
+      <article class="gallery-stat"><strong>8</strong><span>starter photo slots</span></article>
     </section>
 
     <section class="section-shell reveal" aria-labelledby="gallery-title">
@@ -56,22 +57,33 @@
           <p class="eyebrow">Documenting action</p>
           <h2 id="gallery-title">Featured activity moments</h2>
         </div>
-        <div class="gallery-filters" role="group" aria-label="Filter gallery photos">
-          <button class="gallery-filter active" data-gallery-filter="all">All</button>
-          <button class="gallery-filter" data-gallery-filter="eco">Eco</button>
-          <button class="gallery-filter" data-gallery-filter="sport">Sport</button>
-          <button class="gallery-filter" data-gallery-filter="health">Health</button>
-          <button class="gallery-filter" data-gallery-filter="community">Community</button>
+        <div class="gallery-filter-groups">
+          <div class="gallery-filters" role="group" aria-label="Filter gallery photos by category">
+            <button class="gallery-filter active" data-gallery-filter="all">All types</button>
+            <button class="gallery-filter" data-gallery-filter="eco">Eco</button>
+            <button class="gallery-filter" data-gallery-filter="sport">Sport</button>
+            <button class="gallery-filter" data-gallery-filter="health">Health</button>
+            <button class="gallery-filter" data-gallery-filter="community">Community</button>
+          </div>
+          <div class="gallery-filters year-filters" role="group" aria-label="Filter gallery photos by year">
+            <button class="gallery-filter active" data-gallery-year="all">All years</button>
+            <button class="gallery-filter" data-gallery-year="2025">2025</button>
+            <button class="gallery-filter" data-gallery-year="2026">2026</button>
+          </div>
         </div>
       </div>
 
+      <div class="gallery-count" aria-live="polite"><span data-gallery-count>8</span> photos visible</div>
+
       <div class="photo-grid">
-        <article class="photo-card" data-gallery-card data-category="eco"><img src="assets/images/gallery/cleanup-day.svg" alt="Youth Collective cleanup activity placeholder"><div class="photo-content"><span>Eco</span><h3>Cleanup Day</h3><p class="photo-meta">Baku seaside · Summer pilot</p><p>Use this card for photos from cleanup walks, sorting stations, and public-space care.</p></div></article>
-        <article class="photo-card" data-gallery-card data-category="sport"><img src="assets/images/gallery/run-day.svg" alt="Youth Collective running activity placeholder"><div class="photo-content"><span>Sport</span><h3>Seaside Youth Run</h3><p class="photo-meta">Boulevard route · Monthly format</p><p>Replace this with movement photos, route moments, warmups, and finish-line group shots.</p></div></article>
-        <article class="photo-card" data-gallery-card data-category="health"><img src="assets/images/gallery/outdoor-circle.svg" alt="Youth Collective outdoor health gathering placeholder"><div class="photo-content"><span>Health</span><h3>Outdoor Habit Circle</h3><p class="photo-meta">Public park · Weekend activity</p><p>Show walking, stretching, sunlight, breathing, and practical habit-building activities.</p></div></article>
-        <article class="photo-card" data-gallery-card data-category="community"><img src="assets/images/gallery/volunteer-moment.svg" alt="Youth Collective volunteer moment placeholder"><div class="photo-content"><span>Community</span><h3>Volunteer Moment</h3><p class="photo-meta">Team action · Event support</p><p>A space for photos of participants helping, organizing, guiding, and showing up.</p></div></article>
-        <article class="photo-card" data-gallery-card data-category="eco"><img src="assets/images/gallery/seaside-action.svg" alt="Youth Collective seaside ecology action placeholder"><div class="photo-content"><span>Eco</span><h3>Seaside Action</h3><p class="photo-meta">Coastal area · Public space care</p><p>Use for before-and-after photos, route documentation, and visible environmental impact.</p></div></article>
-        <article class="photo-card" data-gallery-card data-category="community"><img src="assets/images/gallery/team-planning.svg" alt="Youth Collective team planning placeholder"><div class="photo-content"><span>Community</span><h3>Team Planning</h3><p class="photo-meta">Youth-led organization · Behind the scenes</p><p>Document planning sessions, role division, reflection meetings, and future project work.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="eco" data-year="2025"><img src="assets/images/gallery/cleanup-day.svg" alt="Youth Collective cleanup activity placeholder"><div class="photo-content"><div class="photo-topline"><span>Eco</span><b>2025</b></div><h3>Cleanup Day</h3><p class="photo-meta">Baku public space · 2025 archive</p><p>Use this for photos from cleanup walks, sorting stations, and public-space care.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="sport" data-year="2025"><img src="assets/images/gallery/run-day.svg" alt="Youth Collective running activity placeholder"><div class="photo-content"><div class="photo-topline"><span>Sport</span><b>2025</b></div><h3>Seaside Movement Day</h3><p class="photo-meta">Boulevard route · 2025 archive</p><p>Replace this with movement photos, route moments, warmups, and group shots.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="health" data-year="2025"><img src="assets/images/gallery/outdoor-circle.svg" alt="Youth Collective outdoor health gathering placeholder"><div class="photo-content"><div class="photo-topline"><span>Health</span><b>2025</b></div><h3>Outdoor Habit Circle</h3><p class="photo-meta">Public park · 2025 archive</p><p>Show walking, stretching, sunlight, breathing, and practical habit-building activities.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="community" data-year="2025"><img src="assets/images/gallery/team-planning.svg" alt="Youth Collective team planning placeholder"><div class="photo-content"><div class="photo-topline"><span>Community</span><b>2025</b></div><h3>Team Planning</h3><p class="photo-meta">Youth-led organization · 2025 archive</p><p>Document planning sessions, role division, reflection meetings, and project work.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="eco" data-year="2026"><img src="assets/images/gallery/seaside-action.svg" alt="Youth Collective seaside ecology action placeholder"><div class="photo-content"><div class="photo-topline"><span>Eco</span><b>2026</b></div><h3>Seaside Action</h3><p class="photo-meta">Coastal area · 2026 plan</p><p>Use for before-and-after photos, route documentation, and environmental impact.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="community" data-year="2026"><img src="assets/images/gallery/volunteer-moment.svg" alt="Youth Collective volunteer moment placeholder"><div class="photo-content"><div class="photo-topline"><span>Community</span><b>2026</b></div><h3>Volunteer Moment</h3><p class="photo-meta">Team action · 2026 plan</p><p>A space for photos of participants helping, organizing, guiding, and showing up.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="sport" data-year="2026"><img src="assets/images/gallery/run-day.svg" alt="Youth Collective future running photo placeholder"><div class="photo-content"><div class="photo-topline"><span>Sport</span><b>2026</b></div><h3>Route Practice</h3><p class="photo-meta">Outdoor movement · 2026 plan</p><p>Use for future runs, warmups, route testing, and participation proof.</p></div></article>
+        <article class="photo-card" data-gallery-card data-category="health" data-year="2026"><img src="assets/images/gallery/outdoor-circle.svg" alt="Youth Collective health photo placeholder"><div class="photo-content"><div class="photo-topline"><span>Health</span><b>2026</b></div><h3>Habit Workshop</h3><p class="photo-meta">Wellness format · 2026 plan</p><p>Use for future outdoor health activities and reflection circles.</p></div></article>
       </div>
     </section>
 
@@ -81,7 +93,7 @@
           <p class="eyebrow">Local upload preview</p>
           <h2>Add activity photos before publishing.</h2>
           <p>This uploader previews photos inside your browser only. A static HTML website cannot permanently save uploads without a backend. For the real public website, place final photos inside <strong>assets/images/gallery/</strong> and replace the placeholder image paths in <strong>gallery.html</strong>.</p>
-          <div class="gallery-note"><strong>Best practice:</strong> rename photos clearly, for example <em>cleanup-boulevard-01.jpg</em>, <em>seaside-run-02.jpg</em>, or <em>team-planning-01.jpg</em>.</div>
+          <div class="gallery-note"><strong>Backend note:</strong> when you are ready, this can be connected to a real server/database so registrations, messages, and photo submissions are saved.</div>
         </div>
         <div>
           <div class="upload-box">
@@ -108,6 +120,7 @@
     <div>
       <h3>Explore</h3>
       <a href="events.html">Activities</a>
+      <a href="activities-2025.html">2025 archive</a>
       <a href="gallery.html">Gallery</a>
       <a href="team.html">Team</a>
       <a href="future.html">Vision</a>

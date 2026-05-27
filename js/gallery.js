@@ -1,20 +1,44 @@
 const photoCards = document.querySelectorAll('[data-gallery-card]');
 const filterButtons = document.querySelectorAll('[data-gallery-filter]');
+const yearButtons = document.querySelectorAll('[data-gallery-year]');
+const galleryCount = document.querySelector('[data-gallery-count]');
 const uploadInput = document.querySelector('[data-photo-upload]');
 const previewGrid = document.querySelector('[data-preview-grid]');
 const previewHeading = document.querySelector('[data-preview-heading]');
+let activeGalleryCategory = 'all';
+let activeGalleryYear = 'all';
+
+function updateGalleryFilters() {
+  let visibleCount = 0;
+  photoCards.forEach((card) => {
+    const categoryMatch = activeGalleryCategory === 'all' || card.dataset.category === activeGalleryCategory;
+    const yearMatch = activeGalleryYear === 'all' || card.dataset.year === activeGalleryYear;
+    const shouldShow = categoryMatch && yearMatch;
+    card.classList.toggle('is-hidden', !shouldShow);
+    if (shouldShow) visibleCount += 1;
+  });
+  if (galleryCount) galleryCount.textContent = String(visibleCount);
+}
 
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const filter = button.dataset.galleryFilter;
+    activeGalleryCategory = button.dataset.galleryFilter;
     filterButtons.forEach((btn) => btn.classList.remove('active'));
     button.classList.add('active');
-    photoCards.forEach((card) => {
-      const shouldShow = filter === 'all' || card.dataset.category === filter;
-      card.style.display = shouldShow ? '' : 'none';
-    });
+    updateGalleryFilters();
   });
 });
+
+yearButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    activeGalleryYear = button.dataset.galleryYear;
+    yearButtons.forEach((btn) => btn.classList.remove('active'));
+    button.classList.add('active');
+    updateGalleryFilters();
+  });
+});
+
+updateGalleryFilters();
 
 if (uploadInput && previewGrid) {
   uploadInput.addEventListener('change', (event) => {

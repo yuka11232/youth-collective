@@ -28,6 +28,7 @@
   <nav class="site-nav" data-site-nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="events.html">Activities</a>
+    <a href="activities-2025.html">2025</a>
     <a href="gallery.html">Gallery</a>
     <a href="team.html">Team</a>
     <a href="future.html">Vision</a>
@@ -39,62 +40,124 @@
 
     <section class="page-hero section-shell reveal">
       <p class="eyebrow">Activities & events</p>
-      <h1>Real participation, clear purpose, visible community value.</h1>
-      <p>Explore Youth Collective’s core event formats: runs, eco-actions, outdoor gatherings, and youth community activities.</p>
+      <h1>Current plans and past-year activity records.</h1>
+      <p>Explore Youth Collective’s activity formats by category and by year. The 2025 archive documents what happened before, while 2026 cards show formats that can continue growing.</p>
+      <div class="archive-actions compact-actions">
+        <a class="button primary" href="activities-2025.html">Open 2025 archive</a>
+        <a class="button secondary" href="gallery.html">Browse gallery by year</a>
+      </div>
     </section>
 
     <section class="section-shell filter-panel reveal">
       <div class="filter-copy">
         <h2>Find an activity</h2>
-        <p>Use the filters to explore event types. The structure is designed so new events can be added easily later.</p>
+        <p>Filter by type or year. This makes the page feel like a real activity archive instead of only a list of future ideas.</p>
       </div>
-      <div class="filters" role="group" aria-label="Filter events">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="eco">Eco</button>
-        <button class="filter-btn" data-filter="sport">Sport</button>
-        <button class="filter-btn" data-filter="health">Health</button>
-        <button class="filter-btn" data-filter="community">Community</button>
+      <div class="filter-groups">
+        <div class="filters" role="group" aria-label="Filter events by category">
+          <button class="filter-btn active" data-filter="all">All types</button>
+          <button class="filter-btn" data-filter="eco">Eco</button>
+          <button class="filter-btn" data-filter="sport">Sport</button>
+          <button class="filter-btn" data-filter="health">Health</button>
+          <button class="filter-btn" data-filter="community">Community</button>
+        </div>
+        <div class="filters year-filters" role="group" aria-label="Filter events by year">
+          <button class="filter-btn active" data-year-filter="all">All years</button>
+          <button class="filter-btn" data-year-filter="2025">2025</button>
+          <button class="filter-btn" data-year-filter="2026">2026</button>
+        </div>
       </div>
     </section>
 
+    <section class="section-shell events-counter reveal" aria-live="polite">
+      <span data-events-count>8</span> activity cards visible
+    </section>
+
     <section class="section-shell events-grid" data-events-grid>
-      <article class="event-card reveal" data-category="eco">
+      <article class="event-card reveal" data-event-card data-category="eco" data-year="2025">
         <img src="assets/images/cleanup.svg" alt="Eco cleanup illustration">
         <div class="event-card-content">
-          <span class="tag">Eco-action</span>
-          <h2>Sunset Cleanup Walk</h2>
-          <p>A walk-based cleanup that makes environmental action simple, social, and visible.</p>
-          <dl><div><dt>Date</dt><dd>Summer pilot</dd></div><div><dt>Location</dt><dd>Baku seaside area</dd></div><div><dt>Purpose</dt><dd>Cleaner public spaces and youth participation</dd></div></dl>
-          <a href="contact.html" class="text-link">Participate →</a>
+          <div class="card-topline"><span class="tag">Eco-action</span><span class="year-badge">2025</span></div>
+          <h2>Cleanup Walk</h2>
+          <p>A past-year cleanup format focused on walking, collecting visible waste, and making public-space care feel social.</p>
+          <dl><div><dt>Year</dt><dd>2025</dd></div><div><dt>Location</dt><dd>Baku public / seaside area</dd></div><div><dt>Status</dt><dd>Archive item</dd></div></dl>
+          <a href="activities-2025.html" class="text-link">Read 2025 details →</a>
         </div>
       </article>
-      <article class="event-card reveal" data-category="sport">
+
+      <article class="event-card reveal" data-event-card data-category="sport" data-year="2025">
         <img src="assets/images/run.svg" alt="Running event illustration">
         <div class="event-card-content">
-          <span class="tag">Sport</span>
-          <h2>Seaside Youth Run</h2>
-          <p>A friendly group run built around consistency, outdoor energy, and confidence.</p>
-          <dl><div><dt>Date</dt><dd>Monthly format</dd></div><div><dt>Location</dt><dd>Baku Boulevard</dd></div><div><dt>Purpose</dt><dd>Healthy habits through accessible movement</dd></div></dl>
-          <a href="contact.html" class="text-link">Participate →</a>
+          <div class="card-topline"><span class="tag">Sport</span><span class="year-badge">2025</span></div>
+          <h2>Seaside Movement Day</h2>
+          <p>A low-pressure movement activity built around walking, warmups, simple running, and group energy.</p>
+          <dl><div><dt>Year</dt><dd>2025</dd></div><div><dt>Location</dt><dd>Baku Boulevard / outdoor route</dd></div><div><dt>Status</dt><dd>Archive item</dd></div></dl>
+          <a href="activities-2025.html" class="text-link">Read 2025 details →</a>
         </div>
       </article>
-      <article class="event-card reveal" data-category="health">
+
+      <article class="event-card reveal" data-event-card data-category="health" data-year="2025">
         <img src="assets/images/outdoor.svg" alt="Outdoor health gathering illustration">
         <div class="event-card-content">
-          <span class="tag">Health</span>
-          <h2>Outdoor Habit Day</h2>
-          <p>A practical youth gathering focused on sunlight, walking, stretching, and basic wellness routines.</p>
-          <dl><div><dt>Date</dt><dd>Weekend pilot</dd></div><div><dt>Location</dt><dd>Public park</dd></div><div><dt>Purpose</dt><dd>Less isolation, more movement, better habits</dd></div></dl>
+          <div class="card-topline"><span class="tag">Health</span><span class="year-badge">2025</span></div>
+          <h2>Outdoor Habit Circle</h2>
+          <p>A practical discussion and activity format about sunlight, walking, stretching, and spending more time outside.</p>
+          <dl><div><dt>Year</dt><dd>2025</dd></div><div><dt>Location</dt><dd>Public park / outdoor space</dd></div><div><dt>Status</dt><dd>Archive item</dd></div></dl>
+          <a href="activities-2025.html" class="text-link">Read 2025 details →</a>
+        </div>
+      </article>
+
+      <article class="event-card reveal" data-event-card data-category="community" data-year="2025">
+        <img src="assets/images/community.svg" alt="Community event illustration">
+        <div class="event-card-content">
+          <div class="card-topline"><span class="tag">Community</span><span class="year-badge">2025</span></div>
+          <h2>Youth Planning Circle</h2>
+          <p>A behind-the-scenes meeting for roles, future plans, photo documentation, and reflection after activities.</p>
+          <dl><div><dt>Year</dt><dd>2025</dd></div><div><dt>Location</dt><dd>Flexible meeting space</dd></div><div><dt>Status</dt><dd>Archive item</dd></div></dl>
+          <a href="activities-2025.html" class="text-link">Read 2025 details →</a>
+        </div>
+      </article>
+
+      <article class="event-card reveal" data-event-card data-category="eco" data-year="2026">
+        <img src="assets/images/cleanup.svg" alt="Eco cleanup illustration">
+        <div class="event-card-content">
+          <div class="card-topline"><span class="tag">Eco-action</span><span class="year-badge future">2026</span></div>
+          <h2>Sunset Cleanup Walk</h2>
+          <p>A walk-based cleanup that makes environmental action simple, social, and visible.</p>
+          <dl><div><dt>Year</dt><dd>2026</dd></div><div><dt>Location</dt><dd>Baku seaside area</dd></div><div><dt>Status</dt><dd>Planned format</dd></div></dl>
           <a href="contact.html" class="text-link">Participate →</a>
         </div>
       </article>
-      <article class="event-card reveal" data-category="community">
+
+      <article class="event-card reveal" data-event-card data-category="sport" data-year="2026">
+        <img src="assets/images/run.svg" alt="Running event illustration">
+        <div class="event-card-content">
+          <div class="card-topline"><span class="tag">Sport</span><span class="year-badge future">2026</span></div>
+          <h2>Seaside Youth Run</h2>
+          <p>A friendly group run built around consistency, outdoor energy, and confidence.</p>
+          <dl><div><dt>Year</dt><dd>2026</dd></div><div><dt>Location</dt><dd>Baku Boulevard</dd></div><div><dt>Status</dt><dd>Planned format</dd></div></dl>
+          <a href="contact.html" class="text-link">Participate →</a>
+        </div>
+      </article>
+
+      <article class="event-card reveal" data-event-card data-category="health" data-year="2026">
+        <img src="assets/images/outdoor.svg" alt="Outdoor health gathering illustration">
+        <div class="event-card-content">
+          <div class="card-topline"><span class="tag">Health</span><span class="year-badge future">2026</span></div>
+          <h2>Outdoor Habit Day</h2>
+          <p>A practical youth gathering focused on sunlight, walking, stretching, and basic wellness routines.</p>
+          <dl><div><dt>Year</dt><dd>2026</dd></div><div><dt>Location</dt><dd>Public park</dd></div><div><dt>Status</dt><dd>Planned format</dd></div></dl>
+          <a href="contact.html" class="text-link">Participate →</a>
+        </div>
+      </article>
+
+      <article class="event-card reveal" data-event-card data-category="community" data-year="2026">
         <img src="assets/images/community.svg" alt="Community event illustration">
         <div class="event-card-content">
-          <span class="tag">Community</span>
+          <div class="card-topline"><span class="tag">Community</span><span class="year-badge future">2026</span></div>
           <h2>Youth Action Circle</h2>
           <p>A planning and reflection session where participants suggest ideas, document progress, and prepare future events.</p>
-          <dl><div><dt>Date</dt><dd>After each major event</dd></div><div><dt>Location</dt><dd>Flexible</dd></div><div><dt>Purpose</dt><dd>Youth leadership and organized growth</dd></div></dl>
+          <dl><div><dt>Year</dt><dd>2026</dd></div><div><dt>Location</dt><dd>Flexible</dd></div><div><dt>Status</dt><dd>Planned format</dd></div></dl>
           <a href="contact.html" class="text-link">Participate →</a>
         </div>
       </article>
@@ -124,6 +187,7 @@
     <div>
       <h3>Explore</h3>
       <a href="events.html">Activities</a>
+      <a href="activities-2025.html">2025 archive</a>
       <a href="gallery.html">Gallery</a>
       <a href="team.html">Team</a>
       <a href="future.html">Vision</a>
